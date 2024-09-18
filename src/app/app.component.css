@@ -1,0 +1,33 @@
+.menu-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pill-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.make-believe-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.make-believe-header::after{
+    content: '';
+    position: absolute;
+    bottom: 0.125rem;
+    left: 3rem;
+    right: 3rem;
+    max-width: 100%;
+    border-bottom: 0.125rem solid var(--color-onyx);
+}

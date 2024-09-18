@@ -1,0 +1,35 @@
+
+
+.modal-location div,
+.modal-location h1,
+.modal-location label,
+.modal-location form,
+.modal-location small,
+.modal-location h3 {
+    background-color: #fff;
+}
+
+.modal-location {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+.modal-location-container {
+    max-width: 500px;
+    width: 90%;
+    margin: 2rem auto 0;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.modal-location-footer {
+    margin-top: 1px solid #f3f3f3;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}

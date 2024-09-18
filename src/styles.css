@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    --color-brick: #b33e2c;
+    --color-white: #f7f7ff;
+    --color-onyx: #393e41;
+    --color-blue: #3370a2;
+    --color-yellow: #f1d302;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    background-color: var(--color-white);
+    color: var(--color-onyx);
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/*
+Utilities
+*/
+
+.bg-primary{
+    background-color: var(--color-blue) !important;
+    color: var(--color-white) !important;
+}
+
+.bg-brick{
+    background-color: var(--color-brick) !important;
+    color: var(--color-white) !important;
+}
+
+.hidden-error {
+    opacity: 0;
+  }

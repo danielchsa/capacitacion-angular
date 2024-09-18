@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-lg-10">
+            <h1>
+               {{ location.name }}
+            </h1>
+        </div>
+        <div class="col-12 col-lg-2 d-flex justify-content-end">
+            <button class="btn btn-primary bg-primary" (click)="handleClick()">
+                Agregar ubicación
+            </button>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12 col-lg-4">
+            <span>Días de pronóstico:</span>
+            <select name="prono" id="prono" class="form-select">
+                <option value="" default hidden selected>Seleccionar días</option>
+                <option value="3">3 días</option>
+                <option value="5">5 días</option>
+                <option value="7">7 días</option>
+            </select>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <div id="graph"></div>
+        </div>
+    </div>
+</div>
+
+<app-loader></app-loader>
+
+<app-modal></app-modal>

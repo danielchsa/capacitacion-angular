@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 make-believe-header">
+      <h1>
+        App de pronóstico climático
+      </h1>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-3">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="menu-title">
+            Ubicaciones disponibles
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 pill-container">
+          @for(pill of getPills; track pill.id){
+            <app-pill [pillText]="pill.name" (click)="pillSelected(pill)" />
+          }
+        </div>
+      </div>
+    </div>
+    <div class="col-9">
+      <router-outlet />
+    </div>
+  </div>
+</div>
+
+<app-float-button></app-float-button>
